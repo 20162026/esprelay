@@ -1,0 +1,12 @@
+.config
+*.o
+*.pyc
+app/build/
+factory/build/
+*/sdkconfig
+*/sdkconfig.old
+key.der
+certificate.der
+pcb/History/
+pcb/__Previews/
+*.log
