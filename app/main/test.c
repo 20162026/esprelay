@@ -1,4 +1,6 @@
-// Copyright tk20162026@gmail.com
+// Copyright 2017 Espressif Systems (Shanghai) PTE LTD
+// Modifications copyright (C) 2020 tk20162026@gmail.com
+
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
