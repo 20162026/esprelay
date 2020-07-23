@@ -1,6 +1,7 @@
 # APP partition
 
 Program code responsable for reading HLW sensor data and MQTT communication.
+
 Must be flashed into app partition using flashing tool or factory partition interface.
 
 ### MQTT
@@ -12,9 +13,9 @@ Must be flashed into app partition using flashing tool or factory partition inte
 | MQTT respons | Description | Called upon |
 | --- | --- | --- |
 | gBridge/u1/topo **{topology JSON}** | topology of mesh network | changed in the MESH |
-| gBridge/u1/heartbeat **{JSON data}** | | every 3 seconds|
+| gBridge/u1/heartbeat **{JSON data}** | heartbeat with sensor data | every 3 seconds|
 | gBridge/u1/factory/**{device MAC}**/status **{uint32 password salt}** | randomly generated password salt | after receiving factory reset command |
-| |gBridge/u1/onoff/**{device MAC}**/status **{1 or 0}** | relay status | after relay state change |
+| gBridge/u1/onoff/**{device MAC}**/status **{1 or 0}** | relay state | on relay state change |
 
 ### Heartbeat JSON data example 
 ```
