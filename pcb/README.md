@@ -1,5 +1,5 @@
 # PCB
 ### Schematics
-<img src="img/SCH-page-001.jpg" width="50%">  
+<img src="img/SCH-page-001.jpg">  
 ### layout
-<img src="trace.PNG">
+<img src="img/trace.PNG">
