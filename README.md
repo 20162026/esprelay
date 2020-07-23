@@ -6,6 +6,7 @@ project consists of app and factory flashable fils and pcb,
 libesphttpd lib used in factory has questionable security futures and should be replaced with smth better
 
 [App partition](app)  
-[Factory partition](/tree/master/factory)
+[Factory partition](factory)  
+[PCB](pcb)
 
 project was based on ESPMDF with 3.3idf version and might not compile with newer one
