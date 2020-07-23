@@ -225,7 +225,7 @@ static void node_read_task(void *arg) //NODE READ FROM MESH
             json_adr=cJSON_GetObjectItemCaseSensitive(obj, "dest_adr");
             MDF_ERROR_CONTINUE(json_data==NULL||json_function==NULL||json_adr==NULL, "Parse JSON parsing error");
 
-            if(strcmp("onoff",json_function->valuestring)==0)
+            if(strcmp("onoff",json_function->valuestring)==0)///relay control
             {
                 if(strlen(json_data->valuestring)==1&&(json_data->valuestring[0]=='0'||json_data->valuestring[0]=='1')){
                 gpio_set_level(RELAY_PIN,json_data->valuestring[0]-'0');
@@ -236,7 +236,7 @@ static void node_read_task(void *arg) //NODE READ FROM MESH
                 }
                 MDF_ERROR_CONTINUE(ret != MDF_OK, "<%s> mwifi_write", mdf_err_to_name(ret));
             }else 
-            if(strcmp("factory",json_function->valuestring)==0){
+            if(strcmp("factory",json_function->valuestring)==0){///factory reset
                 if(factory_salt==0){
                     //generate factory salt
                     factory_salt=esp_random();
